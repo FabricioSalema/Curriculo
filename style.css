@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
+/* inicio global */
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Zen Dots', cursive;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(rgb(0, 68, 255), black);
+    width: 100%;
+    text-align: right;
+}
+
+.menu a{
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 1%;
+    margin: 1%;
+    text-decoration: dotted;
+}
+
+.menu a:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10% 0 0 0;
+    animation: fade 2s;
+}
+
+.conteudo .foto{
+    margin: 0 0 0 10%;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+/* fim global */
+/* Inicio pag. index */
+.conteudo .dados{
+    margin: 0 10% 0 0;
+}
+
+.conteudo .dados strong{
+    color: rgb(0, 132, 255);
+}
+
+.competencias .faculdade, .faetec, .senac{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: fade 2s;
+}
+
+.competencias .faculdade strong{
+    color: rgb(0, 132, 255);
+}
+
+.competencias .faetec strong{
+    color: rgb(0, 132, 255);
+}
+
+.competencias .senac strong{
+    color: rgb(0, 132, 255);
+}
+
+.competencias .descriçao{
+    margin: auto;
+}
+/* fim pag. index */
+/* inicio pag. portifolio */
+li{
+    background-color: rgb(0, 132, 255, 0.5);
+    border-radius: 5px;
+    margin: 0 0 15% 0;
+    padding: 0 0 0 2%;
+    text-align: start;
+}
+
+li a{
+    color: white;
+}
+
+li a:hover{
+    color: rgb(0, 255, 255);
+}
+/* fim pag. portifolio */
+/* inicio pag. quemSouEu */
+.jornada{
+    padding: 0 2% 0 2%;
+}
+/* inicio pag. quemSouEu */
+/* inicio pag. entreEmContato */
+form{
+    justify-content: space-around;
+    align-items: center;
+    margin: 3% 3% 0 0;
+    width: 50%;
+}
+
+.input{
+    margin: 1.5% 0 0 0;
+}
+
+.input input, textarea{
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.8);
+    margin: 0 0 10% 0;
+    text-align: center;
+}
+
+#email{
+    width: 70%;
+}
+
+#mensagem{
+    width: 100%;
+}
+
+.input strong{
+    color: rgb(0, 132, 255);
+}
+
+button{
+    border: none;
+    padding: 2% 5% 2% 5%;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(0, 132, 255, 0.5);
+    color: white;
+    font-size: larger;
+    font-family: 'Zen Dots', cursive;
+}
+
+button:hover{
+    background-color: rgb(0, 132, 255);
+    transform: scale(1.1);
+}
+/* fim pag. entreEmContato */
+/* inicio animaçoes */
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* fim animaçoes */
+/* inicio responsividade */
+@media (max-width: 340px){
+    /* Inicio global */
+    .menu a{
+        font-size: xx-small;
+    }
+    /* fim global */
+}
+
+@media (max-width: 700px){
+    /* inicio global */
+    .menu{
+        justify-content: center;
+    }
+
+    .conteudo{
+        display: block;
+        margin: 15% 0 3% 0;
+    }
+
+    .conteudo .foto{
+        margin: 0 0 0 0%;
+    }
+    /* fim global */
+    /* Inicio pag. index */
+    .conteudo .dados{
+        margin: 0 0 0 0%;
+    }
+
+    .competencias .faculdade, .faetec, .senac{
+        display: block;
+        align-items: center;
+        justify-content: space-around;
+        margin: 3% 0 0 0;
+    }
+    /* fim pag. index */
+    /* inicio pag. entreEmContato */
+    form{
+        margin: 10% 0 0 0;
+        width: 97%;
+    }
+
+    .input input, textarea{
+        margin: 0 0 4% 1%;
+    }
+    /* fim pag. entreEmContato */
+    /* inicio pag. portifolio */
+    li{
+        margin: 0 0 7% 0;
+    }
+    /* fim pag. portifolio */
+}
+
+@media (min-width: 701px){
+    /* Inicio pag. index */
+    .conteudo, .competencias{
+        font-size: large;
+    }
+    /* fim pag. index */
+}
+
+@media (min-width: 1050px){
+    /* Inicio pag. index */
+    .conteudo, .competencias{
+        font-size: x-large;
+    }
+    /* fim pag. index */
+}
+/* fim responsividade */

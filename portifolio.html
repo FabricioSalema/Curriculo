@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .dados h1 {
+            text-align: center;
+        }
+    </style>
+    <title>Currículo</title>
+</head>
+
+<!-- corpo da pag. -->
+<body>
+    <!-- Header ou menu de paginas -->
+    <div class="menu">
+        <a href="index.html"><strong>Página inicial</strong></a>
+        <a href="quemSouEu.html"><strong>Quem sou eu?</strong></a>
+        <a href="entreEmContato.html"><strong>Entre em contato</strong></a>
+    </div>
+    <!-- div de conteudo geral -->
+    <div class="conteudo">
+        <!-- conteudo de foto de apresentação -->
+        <div class="foto">
+            <picture>
+                <source media="(max-width: 700px)" srcset="./imagens/eu-P.png" type="image/png">
+                <source media="(max-width: 1050px)" srcset="./imagens/eu-M.png" type="image/png">
+                <img src="./imagens/eu-G.png" alt="Foto do Fabricio">
+            </picture>
+        </div>
+        <!-- div com uma lista de links para meus projetos -->
+        <div class="portifolio">
+            <h1>Projetos</h1>
+            <!-- div da lista -->
+            <div class="list">
+                <ol type="I">
+                    <li><strong>Título do projeto 1: </strong><a href="">link do projeto 1</a>
+                    <li><strong>Título do projeto 2: </strong><a href="">link do projeto 2</a>
+                    <li><strong>Título do projeto 3: </strong><a href="">link do projeto 3</a>
+                    <li><strong>Título do projeto 4: </strong><a href="">link do projeto 4</a>
+                    <li><strong>Título do projeto 5: </strong><a href="">link do projeto 5</a>
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

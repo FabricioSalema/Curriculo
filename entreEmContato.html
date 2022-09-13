@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Currículo</title>
+</head>
+
+<!-- corpo da pag. -->
+<body>
+    <!-- Header ou menu de paginas -->
+    <div class="menu">
+        <a href="index.html"><strong>Página inicial</strong></a>
+        <a href="quemSouEu.html"><strong>Quem sou eu?</strong></a>
+        <a href="portifolio.html"><strong>Portifólio</strong></a>
+    </div>
+    <!-- div de conteudo geral -->
+    <div class="conteudo">
+        <!-- conteudo de foto de apresentação -->
+        <div class="foto">
+            <picture>
+                <source media="(max-width: 700px)" srcset="./imagens/eu-P.png" type="image/png">
+                <source media="(max-width: 1050px)" srcset="./imagens/eu-M.png" type="image/png">
+                <img src="./imagens/eu-G.png" alt="Foto do Fabricio">
+            </picture>
+        </div>
+        <!-- formulário de envio de mensagem -->
+        <form>
+            <div class="input">
+                <label for="email"><strong>Email:</strong></label>
+                <input type="email" id="email" placeholder="Digite seu email" required>
+            </div>
+            <div class="input">
+                <textarea id="mensagem" cols="30" rows="5" placeholder="Deixe aqui sua mensagem!" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <!-- footer de links -->
+    <div class="footer">
+        <a href="https://github.com/zathlux">GitHub</a>
+        <a href="https://www.linkedin.com/in/fabricio-salema-a4419221a/">LinkedIn</a>
+    </div>
+</body>
+
+</html>

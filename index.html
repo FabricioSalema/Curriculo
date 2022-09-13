@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Currículo</title>
+</head>
+
+<!-- corpo da pag. -->
+<body>
+    <!-- Header ou menu de paginas -->
+    <div class="menu">
+        <a href="quemSouEu.html"><strong>Quem sou eu?</strong></a>
+        <a href="portifolio.html"><strong>Portifólio</strong></a>
+        <a href="entreEmContato.html"><strong>Entre em contato</strong></a>
+    </div>
+    <!-- div de conteudo geral -->
+    <div class="conteudo">
+        <!-- conteudo de foto de apresentação -->
+        <div class="foto">
+            <picture>
+                <source media="(max-width: 700px)" srcset="./imagens/eu-P.png" type="image/png">
+                <source media="(max-width: 1050px)" srcset="./imagens/eu-M.png" type="image/png">
+                <img src="./imagens/eu-G.png" alt="Foto do Fabricio">
+            </picture>
+        </div>
+        <!-- conteudo de dados pessoais -->
+        <div class="dados">
+            <h1>Fabricio Salema Varella Dias</h1>
+            <p><strong>Endereço:</strong> Pilares - RJ</p>
+            <p><strong>Naturalidade: </strong>Brasileiro</p>
+            <p><strong>Estado civil: </strong>Solteiro</p>
+            <p><strong>Nascimento: </strong>15/02/1997</p>
+        </div>
+    </div>
+    <!-- div de competencias -->
+    <div class="competencias">
+        <hr>
+        <!-- div para dados da faculdade -->
+        <div class="faculdade">
+            <!-- imagem de certificado -->
+            <div class="documento">
+                <picture>
+                    <source media="(max-width: 340px)" srcset="./imagens/estacio-P.png" type="image/png">
+                    <source media="(max-width: 1050px)" srcset="./imagens/estacio-M.png" type="image/png">
+                    <img src="./imagens/estacio-G.png" alt="Imagem de curso na Universidade Estácio de Sá">
+                </picture>
+            </div>
+            <!-- detalhes da faculdade -->
+            <div class="descriçao">
+                <h1>Universidade Estácio de Sá</h1>
+                <p><strong>Status:</strong> Cursando</p>
+                <p><strong>Previsão de término: </strong>2023.3</p>
+                <p><strong>Desenvolmentos em: </strong>Programação orientada a objetos, Banco de dados, Engenharia de software e mais...</p>
+            </div>
+        </div>
+        <hr>
+        <!-- div para dados do curso faetec -->
+        <div class="faetec">
+            <!-- imagem de certificado -->
+            <div class="documento">
+                <picture>
+                    <source media="(max-width: 340px)" srcset="./imagens/faetec-P.png" type="image/png">
+                    <source media="(max-width: 1050px)" srcset="./imagens/faetec-M.png" type="image/png">
+                    <img src="./imagens/faetec-G.png" alt="Imagem de curso na FAETEC">
+                </picture>
+            </div>
+            <!-- detalhes do curso -->
+            <div class="descriçao">
+                <h1>Instituição de Ensino FAETEC</h1>
+                <p><strong>Status:</strong> Concluído</p>
+                <p><strong>Término: </strong>07/2019</p>
+                <p><strong>Desenvolmentos em: </strong>JavaScript, CSS3, HTML5, Banco de dados e mais...</p>
+            </div>
+        </div>
+        <hr>
+        <!-- div para dados do curso senac -->
+        <div class="senac">
+            <!-- imagem de certificado -->
+            <div class="documento">
+                <picture>
+                    <source media="(max-width: 340px)" srcset="./imagens/senac-P.png" type="image/png">
+                    <source media="(max-width: 1050px)" srcset="./imagens/senac-M.png" type="image/png">
+                    <img src="./imagens/senac-G.png" alt="Imagem de curso no Senac">
+                </picture>
+            </div>
+            <!-- detalhes do curso -->
+            <div class="descriçao">
+                <h1>Instituição de Ensino Senac-RJ</h1>
+                <p><strong>Status:</strong> Cursando</p>
+                <p><strong>Previsão de término: </strong>02/2023</p>
+                <p><strong>Desenvolmentos em: </strong>JavaScript com REACT, CSS3, HTML5, Banco de dados e mais...</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
