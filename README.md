@@ -1,7 +1,7 @@
 #Projeto individual do 1° módulo
 
 - Aplicação que apresenta informações sobre mim, como um currículo;
-- Possível transitar entre páginas e "enviar mensagens" (não incluido banco de dados ainda).
+- Possível transitar entre páginas e "enviar mensagens" (não incluido banco de dados).
 
 ##Objetivos
 
